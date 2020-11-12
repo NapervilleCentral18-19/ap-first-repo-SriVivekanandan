@@ -1,23 +1,30 @@
-
+import java.util.Scanner;
 /**
- * Write a description of class nameTag here.
+ * This program will display your First and Middle on one line then your Lastname on the second line
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @Sri Vivekanandan
+ * 
  */
 public class nameTag
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    System.out.println("Please enter your name: ");
+    String name = input.nextLine();
+    String split_name[] = name.split(" ");
+    System.out.println(split_name[0] + " " + split_name[1]);
+    System.out.println(split_name[2]);
 
-    /**
-     * Constructor for objects of class nameTag
-     */
-    public nameTag()
-    {
-        // initialise instance variables
-        x = 0;
-    }
 
+  }
     
+
+    // Please enter your name: 
+    // Sriram C. Vivekanandan
+    // Sriram C.
+    // Vivekanandan
+    
+    
+    
+
 }
