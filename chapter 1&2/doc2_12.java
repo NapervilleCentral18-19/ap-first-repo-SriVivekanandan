@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.text.DecimalFormat;
 /**
  * This program will determine the value of coins in a jar and 
  * print the total in dollars and cents
@@ -11,7 +11,7 @@ public class doc2_12
 {
     public static void main(String[]  args){
         Scanner input = new Scanner(System.in);
-        
+        DecimalFormat df = new DecimalFormat("##.##");
         double total = 0.0;
         double quarters = 0.0;
         double dimes = 0.0;
@@ -31,7 +31,7 @@ public class doc2_12
         
         total = quarters + dimes + nickels + pennies;
         
-        System.out.println("$" + total);
+        System.out.println("$" + df.format(total));
         
         
         
